@@ -1,0 +1,110 @@
+/* Global Styles & Typography */
+:root {
+    --primary-maroon: #800000; /* UET Inspired */
+    --gold-accent: #daa520;
+    --light-gray: #f8f9fa;
+    --dark-text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Task 11: Navigation & Header Styling */
+header {
+    background-color: var(--primary-maroon);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid var(--gold-accent);
+}
+
+nav ul {
+    background: #333;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li { margin: 0 20px; }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover { color: var(--gold-accent); }
+
+/* Section Spacing */
+section {
+    padding: 40px 10%;
+    border-bottom: 1px solid #eee;
+}
+
+/* Image Styling */
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Task 12: Course Schedule Table Styling */
+#course-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    font-size: 0.95rem;
+}
+
+#course-schedule th {
+    background-color: var(--primary-maroon);
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+#course-schedule td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Zebra Striping */
+#course-schedule tr:nth-child(even) { background-color: #f2f2f2; }
+
+/* Hover Effect */
+#course-schedule tr:hover {
+    background-color: #fff3cd;
+    cursor: default;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    #course-schedule { overflow-x: auto; }
+    section { padding: 20px 5%; }
+}
+section {
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: var(--primary-maroon);
+    border-left: 5px solid var(--gold-accent);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
