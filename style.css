@@ -108,3 +108,34 @@ h2 {
     padding-left: 15px;
     margin-bottom: 20px;
 }
+/* Task 12: Specific Table Styling */
+#course-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#course-schedule th {
+    background-color: #800000; /* UET Maroon */
+    color: #ffffff;
+    padding: 12px 15px;
+}
+
+#course-schedule td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Zebra Striping */
+#course-schedule tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Hover Effect */
+#course-schedule tr:hover {
+    background-color: #f1c40f; /* Gold highlight on hover */
+    transition: 0.3s;
+}
